@@ -12,7 +12,7 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #76a46a;
+  background-image: url(./assets/background.png);
   color: white;
 }
 
