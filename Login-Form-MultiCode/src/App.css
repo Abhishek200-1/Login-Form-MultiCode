@@ -1,42 +1,87 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+.main-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+    width: 1020px;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.left-part{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #275137;
+    padding: 35px;
+    border-top-left-radius: 45px;
+    border-bottom-left-radius: 45px;   
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.left-part .logo{
+    width: 150px;
 }
 
-.card {
-  padding: 2em;
+.left-part p{
+    color: rgb(255, 244, 127);
+    font-size: 32px;
+    font-weight: bold;
 }
 
-.read-the-docs {
-  color: #888;
+.right-part{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 35px;
+    border-bottom-right-radius: 45px;
+    border-top-right-radius: 45px;
+    color: black;
+}   
+
+.right-part p{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.right-part .form-container{
+    display: flex;
+    flex-direction: column;
+    width: 420px;
+}
+
+label{
+    margin-bottom: 5px;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+input{
+    border: none;
+    border-bottom: 2px solid black;
+    margin-bottom: 35px;
+    outline: none;
+}
+
+button{
+    padding: 18px;
+    border-radius: 15px;
+    font-weight: bold;
+    color: white;
+    font-size: 16px;
+    background-color: #41c791;
+    border: none;
+    cursor: pointer;
+}
+
+.term-conditions .term-text{
+    font-size: 12px;
+    color: rgb(151, 150, 150);
+    font-weight: bold;
+}
+
+a{
+  color: #41c791;
 }
